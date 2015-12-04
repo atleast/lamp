@@ -8,7 +8,7 @@ You are <?php echo $_POST["age"]; ?> years old.</br>
 
 echo "Connect to server...</br>";
 //$con = mysql_connect("127.0.0.1:3306");
-$con = mysql_connect("127.0.0.1:3306","root","Atleast2015");
+$con = mysql_connect("127.0.0.1:3306","root","");
 if(!$con){
 
 	die('Could not connect to DB: '.mysql_error());
