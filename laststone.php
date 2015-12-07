@@ -1,12 +1,8 @@
 <html>
 <body>
 
-//Welcome <?php echo $_POST["name"]; ?></br>
-//You are <?php echo $_POST["age"]; ?> years old.</br>
-
 <?php
-  $output = array();
-  $a = @$_GET['a'] ? $_GET['a'] : '';
+$a = @$_GET['a'] ? $_GET['a'] : '';
   $uid = @$_GET['uid'] ? $_GET['uid'] : 0;
   if (empty($a)) {
    $output = array('data'=>NULL, 'info'=>'No parameters', 'code'=>-201);
